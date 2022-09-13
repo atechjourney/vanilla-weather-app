@@ -63,7 +63,7 @@ li::first-letter {
 }
 
 .temperature strong {
-  color: rgb(33, 33, 33);
+  color: #ffff);
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
