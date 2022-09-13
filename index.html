@@ -47,13 +47,15 @@
           </div>
           <div class="row">
             <div class="col-6">
-              <div class="clearfix temperature">
+              <div class="d-flex weather-temperature">
                 <img src="" alt="mostly_Sunny" class="float-left" id="icon" />
+                <div>
                 <strong id="temperature"></strong
-                ><span class="unit"
+                ><span class="units"
                   ><a href="#" id="celsius-link" class="active">℃</a> |
-                  <a href="#" id="fahrenheit-link">℉</a></span
-                >
+                  <a href="#" id="fahrenheit-link">℉</a>
+                  </span>
+                </div>
               </div>
             </div>
             <div class="col-6">
@@ -63,7 +65,7 @@
               </ul>
             </div>
           </div>
-          <div class="forecast" id="forecast"></div>
+          <div class="weather-forecast" id="forecast"></div>
         </div>
         <small>
           <a
