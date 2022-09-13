@@ -102,6 +102,12 @@ function search(city) {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayTemperature)
     
+function handleSubmit(event) {
+    event.preventDefault();
+    let cityInputElement = document.querySelector("#city-input");
+    search(cityInputElement.value);
+}
+    
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
@@ -131,10 +137,5 @@ celsiusLink.addEventListener("click", displayCelciusTemperature);
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
     
-function handleSubmit(event) {
-    event.preventDefault();
-    let cityInputElement = document.querySelector("#city-input");
-    search(cityInputElement.value);
-}
 
 search("Canada");
